@@ -1,9 +1,9 @@
 function App(){
-    const handleClick =() => {
+    // const handleClick =() => {
 
-    }
+    // }
     return(
-        <button onClick={handleClick}>
+        <button onClick={() => console.log("button clicked")}>
             Add Animal
         </button>
     )
