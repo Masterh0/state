@@ -7,14 +7,14 @@ function getRandomAnimal(){
 }
 
 function App(){
-    const [count , setCount]= useState(0);
+    const [animals , setAnimals] = useState([])
     const handleClick = () => {
-        setCount(count + 1);
+        setAnimals([...animals, getRandomAnimal()])
     }
     return(
         <div>
         <button onClick={handleClick}>Add Animal</button>
-        <p>Number of animals: {count} </p>
+        <p>Number of animals: {animals} </p>
         </div>
     )
 }
